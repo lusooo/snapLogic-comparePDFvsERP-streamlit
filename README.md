@@ -14,4 +14,4 @@ The issues that can happen are the following:
 **Business Value**: several millions of euros per  year 
 
 # Streamlit App
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)] (https://snaplogic-genaibuilder-pdf-erp-reconciliation.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://snaplogic-genaibuilder-pdf-erp-reconciliation.streamlit.app)
