@@ -2,14 +2,16 @@ import streamlit as st
 import requests
 import json
 import time
+from dotenv import dotenv_values
 
 page_title="GenAI Builder - Content Reconciliation"
 title="Content reconciliation between PDF Contracts and ERP"
-# SnapLogic RAG pipeline
-URL = 'https://ec2-13-37-172-69.eu-west-3.compute.amazonaws.com:8081/api/1/rest/feed/run/task/ConnectFasterInc/Toni/Toni_GenAI_Contracts-Reconciliation/Content_Reconciliation_API'
-BEARER_TOKEN ='vktUhPn5qtMfLr4DqfpZW1mS9cNiT0gM'
-timeout = 90
 
+# SnapLogic RAG pipeline
+env = dotenv_values(".env")
+URL = env["SL_TASK_URL"]
+BEARER_TOKEN = env["SL_TASK_TOKEN"]
+timeout = int(env["SL_TASK_TIMEOUT"])
 
 
 def typewriter(text: str, speed: int):
